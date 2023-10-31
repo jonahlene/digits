@@ -23,7 +23,7 @@ const addContact = (contact) => {
   Contacts.collection.insert(contact);
 };
 
-if (Contacts.collection.find().count === 0) {
+if (Contacts.collection.find().count() === 0) {
   if (Meteor.settings.defaultContacts) {
     console.log('Creating default contacts.');
     Meteor.settings.defaultContacts.forEach(contact => addContact(contact));
