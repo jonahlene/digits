@@ -27,6 +27,9 @@ body .navbar {
   --bs-navbar-hover-color: var(--matr-navbar-highlight-text);
 }
 
+.navbar a.nav-link.active {
+  color: var(--matr-navbar-text-color);
+}
 
 /* Set the alert background on the signin and signup pages. */
 #signin-page .alert-light, #signup-page .alert-light {
@@ -47,6 +50,10 @@ footer, footer a {
 
 .link:hover {
   color: #3366CC;
+}
+
+.link2:hover {
+  color: khaki;
 }
 
 .bg-dark a.dropdown-item {
