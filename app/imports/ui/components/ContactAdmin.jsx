@@ -12,6 +12,7 @@ const ContactAdmin = ({ contact }) => (
     </Card.Header>
     <Card.Body>
       <Card.Text>{contact.description}</Card.Text>
+      <footer className="blockquote-footer">{contact.owner}</footer>
     </Card.Body>
   </Card>
 );
@@ -24,6 +25,7 @@ ContactAdmin.propTypes = {
     address: PropTypes.string,
     image: PropTypes.string,
     description: PropTypes.string,
+    owner: PropTypes.string,
     // _id: PropTypes.string,
   }).isRequired,
 };
