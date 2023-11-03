@@ -15,7 +15,7 @@ Note.propTypes = {
   note: PropTypes.shape({
     note: PropTypes.string,
     contactId: PropTypes.string,
-    ownwer: PropTypes.string,
+    owner: PropTypes.string,
     createdAt: PropTypes.instanceOf(Date),
     _id: PropTypes.string,
   }).isRequired,
