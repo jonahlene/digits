@@ -1,5 +1,4 @@
 import React from 'react';
-import { Meteor } from 'meteor/meteor';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import { AutoForm, ErrorsField, HiddenField, SubmitField, TextField } from 'uniforms-bootstrap5';
 import swal from 'sweetalert';
@@ -19,7 +18,7 @@ const formSchema = new SimpleSchema({
 const bridge = new SimpleSchema2Bridge(formSchema);
 
 /* Renders the AddStuff page for adding a document. */
-const AddNote = (owner, contactId) => {
+const AddNote = ({ owner, contactId }) => {
 
   // On submit, insert the data.
   const submit = (data, formRef) => {
